@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 47.4% 11.2%;
+
+    --radius: 0.5rem;
+
+    /* Custom colors for sidebar */
+    --sidebar-background: 220 14.3% 95.9%; /* Light gray */
+    --sidebar-foreground: 222.2 47.4% 11.2%; /* Dark text */
+    --sidebar-accent: 210 40% 96.1%; /* Slightly darker gray for hover */
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%; /* Dark text */
+    --sidebar-border: 214.3 31.8% 91.4%; /* Light border */
+    --sidebar-ring: 222.2 47.4% 11.2%; /* Dark ring */
+    --sidebar-primary: 222.2 47.4% 11.2%; /* Primary color for active items */
+    --sidebar-primary-foreground: 210 40% 98%; /* Light text for active items */
+  }
+
+  .dark {
+    --background: 222.2 47.4% 11.2%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 47.4% 11.2%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 47.4% 11.2%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 210 40% 98%;
+
+    /* Custom colors for sidebar in dark mode */
+    --sidebar-background: 222.2 47.4% 11.2%; /* Dark background */
+    --sidebar-foreground: 210 40% 98%; /* Light text */
+    --sidebar-accent: 217.2 32.6% 17.5%; /* Slightly lighter dark for hover */
+    --sidebar-accent-foreground: 210 40% 98%; /* Light text */
+    --sidebar-border: 217.2 32.6% 17.5%; /* Dark border */
+    --sidebar-ring: 210 40% 98%; /* Light ring */
+    --sidebar-primary: 210 40% 98%; /* Primary color for active items */
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%; /* Dark text for active items */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
