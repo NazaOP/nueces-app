@@ -1,0 +1,33 @@
+[
+  {
+    "id": "P-001",
+    "tipo": "secado",
+    "loteId": "A2345",
+    "cantidad": 1250,
+    "fechaInicio": "2025-05-16T09:00:00Z",
+    "fechaFin": null,
+    "responsable": "María González",
+    "estado": "en_proceso",
+    "parametros": {
+      "humedadInicial": 18,
+      "humedadObjetivo": 8,
+      "temperatura": 28
+    },
+    "avance": 65
+  },
+  {
+    "id": "P-002",
+    "tipo": "clasificacion",
+    "loteId": "B1278",
+    "cantidad": 2500,
+    "fechaInicio": "2025-05-12T08:00:00Z",
+    "fechaFin": "2025-05-14T16:00:00Z",
+    "responsable": "Juan Pérez",
+    "estado": "completado",
+    "parametros": {
+      "criterio": "calibre",
+      "rendimiento": 92
+    },
+    "avance": 100
+  }
+]

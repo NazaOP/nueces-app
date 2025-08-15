@@ -17,13 +17,10 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".", // La ruta base del proyecto es la raíz
     "paths": {
-      "@/*": ["./*"], // Este alias ahora se resolverá desde 'baseUrl'
-      "@/components/*": ["./components/*"],
-      "@/lib/*": ["./lib/*"],
-      "@/hooks/*": ["./hooks/*"]
-    },
-    "baseUrl": "src" // ¡Esta es la línea clave! Indica que 'src' es la base para las rutas.
+      "@/*": ["./src/*"] // Las rutas que comienzan con @/ ahora buscan en `src`
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

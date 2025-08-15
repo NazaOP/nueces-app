@@ -1,0 +1,24 @@
+[
+  {
+    "id": "user_1",
+    "nombre": "Administrador",
+    "apellido": "Sistema",
+    "email": "admin@nuecesapp.com",
+    "username": "admin",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "rol": "admin",
+    "activo": true,
+    "fechaCreacion": "2025-07-18T00:30:43.067Z"
+  },
+  {
+    "id": "user_2",
+    "nombre": "María",
+    "apellido": "González",
+    "email": "maria@nuecesapp.com",
+    "username": "maria",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "rol": "supervisor",
+    "activo": true,
+    "fechaCreacion": "2025-07-18T00:30:43.067Z"
+  }
+]

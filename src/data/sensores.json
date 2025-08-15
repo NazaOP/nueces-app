@@ -1,0 +1,32 @@
+[
+  {
+    "id": "S001",
+    "nombre": "Sensor Humedad #1",
+    "tipo": "humedad",
+    "ubicacion": "Secador #1",
+    "ultimaLectura": "2025-07-18T00:30:43.067Z",
+    "valor": 12,
+    "unidad": "%",
+    "bateria": 85,
+    "estado": "online",
+    "intervalo": 15,
+    "umbralMin": 7,
+    "umbralMax": 14,
+    "alertasActivas": true
+  },
+  {
+    "id": "S002",
+    "nombre": "Sensor Temperatura #1",
+    "tipo": "temperatura",
+    "ubicacion": "Secador #1",
+    "ultimaLectura": "2025-07-18T00:30:43.067Z",
+    "valor": 28,
+    "unidad": "°C",
+    "bateria": 45,
+    "estado": "online",
+    "intervalo": 15,
+    "umbralMin": 18,
+    "umbralMax": 30,
+    "alertasActivas": true
+  }
+]

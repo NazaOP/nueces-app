@@ -52,3 +52,13 @@ export const controlCalidadSchema = z.object({
   responsable: z.string().min(1, "Responsable requerido"),
   observaciones: z.string().optional(),
 })
+
+export const resetPasswordSchema = z.object({
+  token: z.string(),
+  password: z.string().min(6, "La contraseña debe tener al menos 6 caracteres"),
+  confirmPassword: z.string(),
+})
+
+export const recuperarPasswordSchema = z.object({
+  email: z.string().email("Correo electrónico inválido"),
+})

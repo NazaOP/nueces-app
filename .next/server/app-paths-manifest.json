@@ -1,0 +1,4 @@
+{
+  "/recuperar-password/page": "app/recuperar-password/page.js",
+  "/api/auth/recuperar-password/route": "app/api/auth/recuperar-password/route.js"
+}

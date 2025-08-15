@@ -1,0 +1,34 @@
+[
+  {
+    "id": "A2345",
+    "origen": "Finca Los Nogales",
+    "fechaIngreso": "2025-05-15T08:30:00Z",
+    "cantidad": 1250,
+    "variedad": "Chandler",
+    "estado": "en_proceso",
+    "humedadInicial": 18,
+    "humedadActual": 12,
+    "color": "ambar_claro",
+    "calibrePromedio": 32,
+    "procesoActual": "secado",
+    "ubicacion": "Secador #2",
+    "responsable": "María González",
+    "avance": 65
+  },
+  {
+    "id": "B1278",
+    "origen": "Finca San José",
+    "fechaIngreso": "2025-05-10T10:15:00Z",
+    "cantidad": 2500,
+    "variedad": "Franquette",
+    "estado": "terminado",
+    "humedadInicial": 16,
+    "humedadActual": 8,
+    "color": "ambar_claro",
+    "calibrePromedio": 30,
+    "procesoActual": "completado",
+    "ubicacion": "Almacén",
+    "responsable": "Juan Pérez",
+    "avance": 100
+  }
+]

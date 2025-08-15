@@ -1,0 +1,15 @@
+// filepath: c:\Users\nazab\OneDrive\Documentos\nueces-app\prisma\schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Usuario {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+}

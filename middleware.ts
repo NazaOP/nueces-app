@@ -2,23 +2,29 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
 export function middleware(request: NextRequest) {
+  const pathname = request.nextUrl.pathname
+
   // Permitir acceso a rutas de autenticación sin token
   const publicPaths = ["/login", "/registro", "/recuperar-password", "/restablecer-password"]
-  const isPublicPath = publicPaths.some((path) => request.nextUrl.pathname.startsWith(path))
+  const isPublicPath = publicPaths.some((path) => pathname.startsWith(path))
 
-  if (isPublicPath) {
+  // Permitir archivos estáticos e imágenes desde /public
+  const isStaticAsset = pathname.match(/\.(jpg|jpeg|png|svg|webp|ico|css|js)$/)
+
+  // Ignorar rutas públicas y archivos estáticos
+  if (isPublicPath || isStaticAsset) {
     return NextResponse.next()
   }
 
   // Para rutas de API, la autenticación se maneja en cada endpoint
-  if (request.nextUrl.pathname.startsWith("/api/")) {
+  if (pathname.startsWith("/api/")) {
     return NextResponse.next()
   }
 
-  // Para rutas protegidas del frontend, verificar si hay token
+  // Verificar token para rutas protegidas
   const token = request.cookies.get("auth-token")?.value
 
-  if (!token && !request.nextUrl.pathname.startsWith("/login")) {
+  if (!token && !pathname.startsWith("/login")) {
     return NextResponse.redirect(new URL("/login", request.url))
   }
 
@@ -27,12 +33,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
     "/((?!_next/static|_next/image|favicon.ico).*)",
   ],
 }
